@@ -1,16 +1,11 @@
 ﻿<Properties StartupItem="nodebased_world_recursive.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WanderingAgent.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NodeWorld.cs">
     <Files>
-      <File FileName="MyGame.cs" Line="1" Column="1" />
-      <File FileName="NodeWorld.cs" Line="1" Column="1" />
-      <File FileName="WanderingAgent.cs" Line="1" Column="1" />
-      <File FileName="..\..\Components\Vec2.cs" Line="1" Column="1" />
-      <File FileName="..\..\Components\IntVec2.cs" Line="1" Column="1" />
-      <File FileName="..\..\Components\LineSegment.cs" Line="1" Column="1" />
-      <File FileName="AbstractAgent.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Randy\Dropbox\ACT\Assignments Quartile 3\lecture1_samples#(1)\GXPEngine\sources\GXPEngine\Core\GLContext.cs" Line="1" Column="1" />
-      <File FileName="Node.cs" Line="7" Column="7" />
+      <File FileName="MyGame.cs" Line="68" Column="68" />
+      <File FileName="NodeWorld.cs" Line="3" Column="3" />
+      <File FileName="Node.cs" Line="18" Column="18" />
+      <File FileName="Connection.cs" Line="4" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

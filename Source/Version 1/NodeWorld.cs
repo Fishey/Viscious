@@ -13,6 +13,9 @@ namespace GXPEngine
 
 		Node _selectednode = null;
 		LineSegment _selectionline = null;
+		int strength = 0;
+		int flexibility = 0;
+		int roughness = 0;
 
 		public NodeWorld ()
 		{
@@ -56,6 +59,12 @@ namespace GXPEngine
 			}
 		}
 			
+
+		public void CountStats(){
+			foreach (Connection connection in _connections) {
+				//check how much stats each connection gives here
+			}
+		}
 
 		public int NodeCount
 		{
