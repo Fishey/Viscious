@@ -6,10 +6,12 @@ namespace GXPEngine
 	public class NodeWorld : GameObject
 	{
 		private List<Node> _nodeList;
+		private List<Connection> _connections;
 
 		public NodeWorld ()
 		{
 			_nodeList = new List<Node> ();
+			_connections = new List<Connection> ();
 		}
 
 		public void AddNode(Node node)
@@ -20,10 +22,19 @@ namespace GXPEngine
 
 		public void AddConnection(Node node1, Node node2)
 		{
-			node1.AddConnection (node2);
-			node2.AddConnection (node1);
-			LineSegment connection = new LineSegment (node1.Position.Clone(), node2.Position.Clone());
-			AddChild (connection);
+			if (!node1.CheckConnections () && !node2.CheckConnections ()) {
+
+				Connection connection = new Connection (node1, node2);
+
+				_connections.Add (connection);
+
+				node1.AddConnection (connection);
+				node2.AddConnection (connection);
+
+				AddChild (connection);
+			} else {
+				Console.WriteLine ("no connections left on the nodes");
+			}
 		}
 			
 

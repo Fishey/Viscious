@@ -6,20 +6,30 @@ namespace GXPEngine
 {
 	public class Node : Canvas
 	{
-		private List<Node> _connections;
+		private List<Connection> _connections;
 		private Vec2 _position;
 		private Color _color;
 		private int _radius;
+		private int reqConnections;
 
-		public Node (int pRadius, Color? pColor = null, Vec2 pPosition = null):base (pRadius*2, pRadius*2)
+		public Node (int preqConnections, int pRadius, Color? pColor = null, Vec2 pPosition = null):base (pRadius*2, pRadius*2)
 		{
-			_connections = new List<Node> ();
+			reqConnections = preqConnections;
+			_connections = new List<Connection> ();
 			_radius = pRadius;
 			SetOrigin (pRadius, pRadius);
 			_position = pPosition ?? Vec2.zero;
 			_color = pColor ?? Color.Blue;
 			draw ();
 			step ();
+		}
+
+		public bool CheckConnections(){
+			if (_connections.Count == reqConnections) {
+				return true;
+			} else {
+				return false;
+			}
 		}
 
 		private void draw() {
@@ -30,27 +40,7 @@ namespace GXPEngine
 			);
 		}
 
-		public List<Node> GetPath(List<Node> checkedNodes, Node target)
-		{
-			checkedNodes.Add (this);
 
-			if (this == target) {
-				Console.WriteLine ("Found it!");
-				foreach (Node node in checkedNodes) {
-					Console.WriteLine (node.Position);
-				}
-				return checkedNodes;
-			} else {
-				foreach (Node node in _connections) {
-					if (checkedNodes.Contains(node))
-					{
-						Console.WriteLine ("OK! It was not {0}. We'll check {1}!", this.Position, node.Position);
-						return node.GetPath(checkedNodes, target);
-					}
-				}
-				return null;
-			}
-		}
 
 		private void step()
 		{
@@ -64,9 +54,9 @@ namespace GXPEngine
 			set { this._position = value; }
 		}
 
-		public void AddConnection(Node node)
+		public void AddConnection(Connection connection)
 		{
-			_connections.Add (node);
+			_connections.Add (connection);
 		}
 
 		public int ConnectionCount
@@ -74,16 +64,6 @@ namespace GXPEngine
 			get { return this._connections.Count; }
 		}
 
-		public Node GetConnectionAt(int index)
-		{
-			try{
-			return _connections [index];
-			}
-			catch (ArgumentOutOfRangeException ex) {
-				Console.WriteLine ("Node was not found at that index ({0})", index);
-				return null;
-			}
-		}
 
 		public int Radius
 		{

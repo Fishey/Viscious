@@ -131,6 +131,7 @@
     </Compile>
     <Compile Include="Node.cs" />
     <Compile Include="NodeWorld.cs" />
+    <Compile Include="Connection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\GXPEngine\sources\changelog.txt">
