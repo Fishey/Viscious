@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="nodebased_world_recursive.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WanderingAgent.cs">
+    <Files>
+      <File FileName="MyGame.cs" Line="1" Column="1" />
+      <File FileName="NodeWorld.cs" Line="1" Column="1" />
+      <File FileName="WanderingAgent.cs" Line="1" Column="1" />
+      <File FileName="..\..\Components\Vec2.cs" Line="1" Column="1" />
+      <File FileName="..\..\Components\IntVec2.cs" Line="1" Column="1" />
+      <File FileName="..\..\Components\LineSegment.cs" Line="1" Column="1" />
+      <File FileName="AbstractAgent.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Randy\Dropbox\ACT\Assignments Quartile 3\lecture1_samples#(1)\GXPEngine\sources\GXPEngine\Core\GLContext.cs" Line="1" Column="1" />
+      <File FileName="Node.cs" Line="7" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="WanderingAgent.cs" line="50" offsetX="540" offsetY="746" expression="_lastTarget" liveUpdate="False" />
+    <Watch file="WanderingAgent.cs" line="50" offsetX="819" offsetY="747" expression="_target" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

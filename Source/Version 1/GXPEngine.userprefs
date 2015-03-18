@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="tilebased_world.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TileWorld.cs">
+    <Files>
+      <File FileName="MyGame.cs" Line="23" Column="23" />
+      <File FileName="TileWorld.cs" Line="17" Column="17" />
+      <File FileName="c:\Users\Hans\Dropbox\saxion\2014_2015\kwartaal_3\1_3_game_ai\2014_2015\sheets\GXPEngine\sources\GXPEngine\Core\BoxCollider.cs" Line="1" Column="1" />
+      <File FileName="..\..\GXPEngine\sources\GXPEngine\Canvas.cs" Line="1" Column="1" />
+      <File FileName="..\..\GXPEngine\sources\GXPEngine\GameObject.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

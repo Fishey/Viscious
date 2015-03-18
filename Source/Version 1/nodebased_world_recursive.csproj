@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5126D4C-7FE0-4552-BC8C-E68D529C22B2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GXPEngine</RootNamespace>
+    <AssemblyName>GXPEngine</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="..\source\GXPEngine\" />
+    <Folder Include="..\source\GXPEngine\OpenGL\" />
+    <Folder Include="..\source\GXPEngine\Core\" />
+    <Folder Include="..\source\GXPEngine\Utils\" />
+    <Folder Include="..\source\GXPEngine\Managers\" />
+    <Folder Include="..\source\GXPEngine\FMOD\" />
+    <Folder Include="Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyGame.cs" />
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\AnimSprite.cs">
+      <Link>GXPEngine\sources\GXPEngine\AnimSprite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Canvas.cs">
+      <Link>GXPEngine\sources\GXPEngine\Canvas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Game.cs">
+      <Link>GXPEngine\sources\GXPEngine\Game.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\GameObject.cs">
+      <Link>GXPEngine\sources\GXPEngine\GameObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Sound.cs">
+      <Link>GXPEngine\sources\GXPEngine\Sound.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\SoundChannel.cs">
+      <Link>GXPEngine\sources\GXPEngine\SoundChannel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Sprite.cs">
+      <Link>GXPEngine\sources\GXPEngine\Sprite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\BlendMode.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\BlendMode.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\BoxCollider.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\BoxCollider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\Collider.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\Collider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\GLContext.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\GLContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\Rectangle.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\Rectangle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\Texture2D.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\Texture2D.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\Transformable.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\Transformable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Core\Vector2.cs">
+      <Link>GXPEngine\sources\GXPEngine\Core\Vector2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\FMOD\FMOD.cs">
+      <Link>GXPEngine\sources\GXPEngine\FMOD\FMOD.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Managers\CollisionManager.cs">
+      <Link>GXPEngine\sources\GXPEngine\Managers\CollisionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Managers\UpdateManager.cs">
+      <Link>GXPEngine\sources\GXPEngine\Managers\UpdateManager.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\OpenGL\GL.cs">
+      <Link>GXPEngine\sources\GXPEngine\OpenGL\GL.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Utils\Input.cs">
+      <Link>GXPEngine\sources\GXPEngine\Utils\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Utils\Key.cs">
+      <Link>GXPEngine\sources\GXPEngine\Utils\Key.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Utils\MouseHandler.cs">
+      <Link>GXPEngine\sources\GXPEngine\Utils\MouseHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Utils\Time.cs">
+      <Link>GXPEngine\sources\GXPEngine\Utils\Time.cs</Link>
+    </Compile>
+    <Compile Include="..\..\GXPEngine\sources\GXPEngine\Utils\Utils.cs">
+      <Link>GXPEngine\sources\GXPEngine\Utils\Utils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Components\Vec2.cs">
+      <Link>Components\Vec2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Components\LineSegment.cs">
+      <Link>Components\LineSegment.cs</Link>
+    </Compile>
+    <Compile Include="AbstractAgent.cs" />
+    <Compile Include="..\..\Components\IntVec2.cs">
+      <Link>Components\IntVec2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Components\TextField.cs">
+      <Link>Components\TextField.cs</Link>
+    </Compile>
+    <Compile Include="Node.cs" />
+    <Compile Include="NodeWorld.cs" />
+    <Compile Include="WanderingAgent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\GXPEngine\sources\changelog.txt">
+      <Link>GXPEngine\sources\changelog.txt</Link>
+    </None>
+  </ItemGroup>
+</Project>
