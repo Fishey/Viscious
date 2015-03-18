@@ -32,7 +32,7 @@ public class MyGame : Game
 		_nodeWorld.AddConnection (_nodeWorld.GetNodeAt (2), _nodeWorld.GetNodeAt (3));
 		_nodeWorld.AddConnection (_nodeWorld.GetNodeAt (5), _nodeWorld.GetNodeAt (2));
 
-		_nodeWorld.AddAgent (new WanderingAgent (_nodeWorld, 15, Color.Red, 5));
+		//_nodeWorld.AddAgent (new WanderingAgent (_nodeWorld, 15, Color.Red, 5));
 	}
 
 	void Update () {

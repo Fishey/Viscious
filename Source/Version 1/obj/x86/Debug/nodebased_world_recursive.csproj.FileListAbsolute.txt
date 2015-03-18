@@ -5,3 +5,5 @@ C:\Users\Randy\Dropbox\ACT\Assignments Quartile 3\lecture1_samples#(1)\Assignmen
 C:\Users\Josse\Desktop\Viscious\Source\Version 1\obj\x86\Debug\nodebased_world_recursive.csprojResolveAssemblyReference.cache
 C:\Users\Josse\Desktop\Viscious\Source\Version 1\obj\x86\Debug\GXPEngine.exe
 C:\Users\Josse\Desktop\Viscious\Source\Version 1\obj\x86\Debug\GXPEngine.pdb
+C:\Users\Josse\Desktop\Viscious\Source\Version 1\bin\Debug\GXPEngine.exe
+C:\Users\Josse\Desktop\Viscious\Source\Version 1\bin\Debug\GXPEngine.pdb

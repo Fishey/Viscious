@@ -6,12 +6,10 @@ namespace GXPEngine
 	public class NodeWorld : GameObject
 	{
 		private List<Node> _nodeList;
-		private List<AbstractAgent> _agentList;
 
 		public NodeWorld ()
 		{
 			_nodeList = new List<Node> ();
-			_agentList = new List<AbstractAgent> ();
 		}
 
 		public void AddNode(Node node)
@@ -27,12 +25,7 @@ namespace GXPEngine
 			LineSegment connection = new LineSegment (node1.Position.Clone(), node2.Position.Clone());
 			AddChild (connection);
 		}
-
-		public void AddAgent(AbstractAgent agent)
-		{
-			_agentList.Add (agent);
-			AddChild (agent);
-		}
+			
 
 		public int NodeCount
 		{
