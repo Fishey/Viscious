@@ -18,12 +18,16 @@ public class MyGame : Game
 		AddChild (_nodeWorld);
 
 		_nodeWorld.AddNode (new Node (1,30, Color.Blue, new Vec2 (200, 100))); // 0
-		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (400, 50))); // 1
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (400, 50))); // 1
 		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (700, 300))); // 2
 
-		_nodeWorld.AddConnection (_nodeWorld.GetNodeAt (0), _nodeWorld.GetNodeAt (1));
-		_nodeWorld.AddConnection (_nodeWorld.GetNodeAt (0), _nodeWorld.GetNodeAt (2));
-	
+		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (400, 180))); // 0
+		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (500, 250))); // 1
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (500, 400))); // 2
+
+		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (300, 100))); // 0
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (700, 450))); // 1
+		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (900, 350))); // 2
 
 	}
 

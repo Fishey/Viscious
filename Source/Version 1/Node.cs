@@ -15,6 +15,7 @@ namespace GXPEngine
 		public Node (int preqConnections, int pRadius, Color? pColor = null, Vec2 pPosition = null):base (pRadius*2, pRadius*2)
 		{
 			reqConnections = preqConnections;
+			name = reqConnections.ToString ();
 			_connections = new List<Connection> ();
 			_radius = pRadius;
 			SetOrigin (pRadius, pRadius);
@@ -38,6 +39,7 @@ namespace GXPEngine
 				new SolidBrush (_color),
 				0, 0, 2 * _radius, 2 * _radius
 			);
+			graphics.DrawString (name, new Font ("Arial", 10), new SolidBrush (Color.White), Radius/2,Radius/2);
 		}
 
 
@@ -56,6 +58,8 @@ namespace GXPEngine
 
 		public void AddConnection(Connection connection)
 		{
+			connection.x += _connections.Count * 5;
+			connection.y -= _connections.Count * 5;
 			_connections.Add (connection);
 		}
 

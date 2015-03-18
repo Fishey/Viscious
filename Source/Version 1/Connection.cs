@@ -4,11 +4,11 @@ namespace GXPEngine
 {
 	public class Connection : LineSegment
 	{
-		Node start {
+		new Node start {
 			get;
 			set;
 		}
-		Node end {
+		new Node end {
 			get;
 			set;
 		}
