@@ -1,0 +1,4 @@
+C:\Users\Randy\Documents\GitHub\Viscious\Source\Version 1\bin\Debug\GXPEngine.exe
+C:\Users\Randy\Documents\GitHub\Viscious\Source\Version 1\obj\x86\Debug\GXPEngine.exe
+C:\Users\Randy\Documents\GitHub\Viscious\Source\Version 1\obj\x86\Debug\GXPEngine.pdb
+C:\Users\Randy\Documents\GitHub\Viscious\Source\Version 1\bin\Debug\GXPEngine.pdb

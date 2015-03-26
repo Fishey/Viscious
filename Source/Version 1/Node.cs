@@ -27,6 +27,8 @@ namespace GXPEngine
 
 		public bool CheckConnections(){
 			if (_connections.Count == reqConnections) {
+				this._color = Color.Red;
+				draw ();
 				return true;
 			} else {
 				return false;
@@ -61,6 +63,7 @@ namespace GXPEngine
 			connection.x += _connections.Count * 5;
 			connection.y -= _connections.Count * 5;
 			_connections.Add (connection);
+			CheckConnections ();
 		}
 
 		public int ConnectionCount
