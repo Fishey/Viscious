@@ -17,17 +17,17 @@ public class MyGame : Game
 		_nodeWorld = new NodeWorld ();
 		AddChild (_nodeWorld);
 
-		_nodeWorld.AddNode (new Node (1,30, Color.Blue, new Vec2 (200, 100))); // 0
-		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (400, 50))); // 1
-		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (700, 300))); // 2
+		_nodeWorld.AddNode (new Node (1,30, Color.Blue, new Vec2 (200, 100))); // 1
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (400, 50))); // 3
+		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (700, 300))); // 4
 
-		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (400, 180))); // 0
-		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (500, 250))); // 1
-		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (500, 400))); // 2
+		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (400, 180))); // 2
+		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (500, 250))); // 3
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (500, 400))); // 4
 
-		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (300, 100))); // 0
-		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (700, 450))); // 1
-		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (900, 350))); // 2
+		_nodeWorld.AddNode (new Node (2,30, Color.Blue, new Vec2 (300, 100))); // 2
+		_nodeWorld.AddNode (new Node (3,30, Color.Blue, new Vec2 (700, 450))); // 3
+		_nodeWorld.AddNode (new Node (4,30, Color.Blue, new Vec2 (900, 350))); // 4
 
 	}
 

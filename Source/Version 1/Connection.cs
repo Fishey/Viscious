@@ -4,19 +4,19 @@ namespace GXPEngine
 {
 	public class Connection : LineSegment
 	{
-		new Node start {
+		public new Node firstNode {
 			get;
 			set;
 		}
-		new Node end {
+		public new Node secondNode {
 			get;
 			set;
 		}
 
-		public Connection (Node pstart, Node pend) : base(pstart.Position,pend.Position)
+		public Connection (Node pFirstNode, Node pSecondNode) : base(pFirstNode.Position,pSecondNode.Position)
 		{
-			start = pstart;
-			end = pend;
+			firstNode = pFirstNode;
+			secondNode = pSecondNode;
 		}
 	}
 }

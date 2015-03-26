@@ -1,1 +1,15 @@
-﻿<Properties StartupItem="Game Interaction.csproj" />
+﻿<Properties StartupItem="Game Interaction.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NodeWorld.cs">
+    <Files>
+      <File FileName="MyGame.cs" Line="23" Column="23" />
+      <File FileName="Node.cs" Line="4" Column="4" />
+      <File FileName="Connection.cs" Line="29" Column="29" />
+      <File FileName="NodeWorld.cs" Line="4" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -7,25 +7,30 @@ namespace GXPEngine
 	public class NodeWorld : GameObject
 	{
 		MouseHandler mh;
-
 		private List<Node> _nodeList;
 		private List<Connection> _connections;
 
 		Node _selectednode = null;
 		LineSegment _selectionline = null;
+		TextField _stats = TextField.CreateTextField("STR: 000 - FLX: 000 - RGH: 000 - Error: Node X cannot connect to node Y");
+
+		//stats
 		int strength = 0;
 		int flexibility = 0;
 		int roughness = 0;
+		string error = "";
 
 		public NodeWorld ()
 		{
+			_stats.text = "STR: "+ strength + " - FLX: " + flexibility + " - RGH: " + roughness + error;
 			mh = new MouseHandler (this);
 			mh.OnMouseDown += DoThisOnMouseDown;
 			mh.OnMouseUp += DoThisOnMouseUp;
 			mh.OnMouseMove += DoThisOnMouseMove;
-
+			this.AddChild (_stats);
 			_nodeList = new List<Node> ();
 			_connections = new List<Connection> ();
+
 		}
 
 		public void AddNode(Node node)
@@ -54,15 +59,33 @@ namespace GXPEngine
 				node2.AddConnection (connection);
 
 				AddChild (connection);
+				error = "";
 			} else {
-				Console.WriteLine ("no connections left on the nodes");
+				error = " - Node " + node1.name + " cannot connect to node " + node2.name;
+
 			}
+			CountStats ();
+
 		}
 			
 
 		public void CountStats(){
 			foreach (Connection connection in _connections) {
 				//check how much stats each connection gives here
+				if (connection.firstNode.name == "1" && connection.secondNode.name == "2") {
+					strength++;
+				} else if (connection.firstNode.name == "1" && connection.secondNode.name == "3") {
+					strength--;
+				} else if (connection.firstNode.name == "1" && connection.secondNode.name == "4") {
+					flexibility++;
+				} else if (connection.firstNode.name == "2" && connection.secondNode.name == "3") {
+					flexibility--;
+				} else if (connection.firstNode.name == "2" && connection.secondNode.name == "4") {
+					roughness++;
+				} else if (connection.firstNode.name == "3" && connection.secondNode.name == "4") {
+					roughness--;
+				}
+				_stats.text = "STR: "+ strength + " - FLX: " + flexibility + " - RGH: " + roughness + error;
 			}
 		}
 
